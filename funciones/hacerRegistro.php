@@ -10,7 +10,7 @@ $miObjeto->contraseña = $_GET['contraseña'];
 
 
     $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-	$consulta =$objetoAccesoDato->RetornarConsulta("select nombre from usuario");
+	$consulta =$objetoAccesoDato->RetornarConsulta(SELECT * FROM `usuario`)//("select nombre from usuario");
 	$consulta->execute();			
 	$datos= $consulta->fetchAll(PDO::FETCH_ASSOC);		
 	//var_dump($datos);
