@@ -1,6 +1,7 @@
 <?php
 include 'accesoadatos.php';
-	session_start();
+	//session_start();
+var_dump("hola")die();
 			$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); //obtener consulta
 			$consulta =$objetoAccesoDato->RetornarConsulta("select nombre  , clave  from usuario"); //crear consulta
 			$consulta->execute();	//ejecutar
